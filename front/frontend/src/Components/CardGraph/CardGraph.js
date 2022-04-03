@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 
-const CardGraph = ({title,href,currentList}) => {
+const CardGraph = ({title,href,currentList,setAdminLists}) => {
     const [Lists, setLists] = useState(currentList)
     const ShowPic = ()=>{
         // show pic
@@ -10,6 +10,8 @@ const CardGraph = ({title,href,currentList}) => {
         currentList = currentList.filter(function(obj){
             return obj.title !== title;
         })
+
+        setAdminLists(currentList);
     }
 
 
@@ -22,10 +24,14 @@ const CardGraph = ({title,href,currentList}) => {
                 <div className="checkbox-Container">
                     <input className='showInput' type="checkbox" id="show" name="Show" onChange={()=>{
                         handleCheck(title)
-                        console.log(currentList)
+                        console.log("Lists ")
+                        console.log(Lists)
+                   
                         setLists(currentList)
                         /* Here work with lists checkbox */
-                        console.log(Lists)
+                        console.log("CurrentList")
+                        console.log(currentList)
+                      
                     }} checked={Lists.some(item => item.title == title )}/>
                     <label htmlFor="Show">Show Graph</label>
                 </div>             

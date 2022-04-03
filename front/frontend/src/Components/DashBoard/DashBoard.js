@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useState, useEffect} from 'react'
 import NavBar from '../NavBar/NavBar'
 import Card from '../Card/Card' 
 import TableCard from '../TableCard/TableCard'
@@ -27,6 +27,12 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
     "Devops":DevopsLists,
     "AnylastDev":AnylastLists
   }
+
+  useEffect(() => {
+    console.log("Admin list changes")
+    console.dir(AdminLists)
+  }, [AdminLists])
+  
  
   const listByRole = (role) => {
     return listsNames[role];
@@ -50,7 +56,8 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
        
 
       </div>
-      {ShowGraph && <TableCard listsGraph={listsGraph} numberOfGraph={listsGraph.length} currentList={listByRole(localStorage.getItem("Role"))} />}
+      {ShowGraph && <TableCard listsGraph={listsGraph} numberOfGraph={listsGraph.length}
+       currentList={listByRole(localStorage.getItem("Role"))} setAdminLists={setAdminLists}/>}
 
     </div>
   )
