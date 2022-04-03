@@ -14,7 +14,6 @@ const NavBar = () => {
         });
        }, []);
     
-    const[toggle, setToggle] = useState(false)
   return (
     <nav className="app_navbar">
         <div className="app_navbar_menu">
@@ -24,7 +23,7 @@ const NavBar = () => {
                     {['Admin','Developer','Devops','Anylast'].map((item)=>(
 
                         <li className="p-text flex" key={item}>
-                            <a href={`#${item}`} onClick={()=>{setToggle(false)}}>{item}</a>
+                            <a href={`#${item}`} onClick={()=>{}}>{item}</a>
                         </li>
                     ))}
                 </ul>

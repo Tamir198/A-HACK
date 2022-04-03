@@ -12,17 +12,9 @@ const DashBoard = () => {
   },{
   title:"Graph3",
   src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-},
-{
-  title:"Graph4",
-  src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-},
-{
-  title:"Graph5",
-  src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-}]
+  }]
 
-const [AdminLists,setAdminLists] = useState([listsGraph[0],listsGraph[1],listsGraph[2]]);
+const [AdminLists,setAdminLists] = useState([listsGraph[0],listsGraph[1]]);
 const [DevLists,setDevLists] = useState([listsGraph[0],listsGraph[1],listsGraph[2]]);
 const [DevopsLists,setDevopsLists] = useState([listsGraph[0],listsGraph[1]])
 const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
@@ -33,10 +25,9 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
     "Admin":AdminLists,
     "Dev":DevLists,
     "Devops":DevopsLists,
-    "AnylastDev":AnylastLists,
+    "AnylastDev":AnylastLists
   }
-
-
+ 
   const listByRole = (role) => {
     return listsNames[role];
   }
@@ -59,7 +50,7 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
        
 
       </div>
-      {ShowGraph && <TableCard listsGraph={listsGraph} numberOfGraph={listsGraph.length}/>}
+      {ShowGraph && <TableCard listsGraph={listsGraph} numberOfGraph={listsGraph.length} currentList={listByRole(localStorage.getItem("Role"))} />}
 
     </div>
   )
