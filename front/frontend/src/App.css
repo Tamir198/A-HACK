@@ -114,3 +114,152 @@
   width:100%;
   height:80%;
 }
+
+.login-section{
+  background-color: white;
+  box-shadow: #00000059 0px 5px 15px;
+  border-radius: 10px;
+  width:35rem;
+  height:40rem;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+    margin: auto;
+  display: flex;
+}
+
+.form-login{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section__Login{
+  height:100%;
+  flex:1;
+  background: #f8f8ff;
+  border-radius: 15px;
+}
+.section__info{
+  border-radius: 30px 0px 0px 30px;
+  height:100%;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.login__background{
+  width:50%;
+  height:80%;
+  position: absolute;
+  top:0vh;
+  left:0vw;
+  border-radius: 8px;
+}
+
+.line{
+  width:4rem;
+  height:0.01rem;
+  
+  border-top: 0.1rem solid white;
+}
+
+.icon{
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.login-title{
+  padding: 1rem 2rem;
+}
+
+.h5-info-form{
+  color:red;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.Form__section__login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.errorSection{
+  height:4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 5rem;
+}
+
+.errorMsg{
+  margin-right: 1rem;
+  color: red;
+  font-weight: 500;
+  margin:0;
+}
+
+.section-name, .section-password,.section-message ,.section-phone{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+  position: relative;
+  }
+  
+.btnSubmit{
+  padding: 1rem 2rem;
+  background-color: purple;
+  color:white;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  border:none;
+  transition: all 0.3s ease-in-out;
+  position:relative;
+  top:10vh;
+  width:11rem;
+  margin: auto;
+  text-align: center;
+}
+
+.btnSubmit:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+  color:black;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.LabelDiv{
+  font-size: 1rem;
+  width: 5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width:20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border:none;
+  padding-right: 0.5rem;
+  outline: none;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+input:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    outline:1px solid gray;
+}

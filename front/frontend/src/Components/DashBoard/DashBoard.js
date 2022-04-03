@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 const DashBoard = () => {
   return (
     <div>
-      <NavBar/>
+      {localStorage.getItem("Role") == "Admin" && <NavBar/>}
       <div className='card-section'>
         <Card title="Graph 1"/>
         <Card  title="Graph 2"/>
