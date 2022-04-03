@@ -14,6 +14,7 @@ const LoginForm = () => {
         Name: '',
         Password:''
     }})
+    
     const [sentSuccess,setSentSuccess] = useState(false);
 
     /*const sendLoginPostRequest =async (sendingData) =>{

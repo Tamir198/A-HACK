@@ -10,7 +10,6 @@ function App() {
       <Routes>
         <Route exact path='/' element={<LoginForm/>}/>
         <Route exact path='/DashBoard' element={<DashBoard/>}/>
-
       </Routes>
 
   </>
