@@ -27,7 +27,7 @@ const CardGraph = ({title,href,currentList}) => {
                         /* Here work with lists checkbox */
                         console.log(Lists)
                     }} checked={Lists.some(item => item.title == title )}/>
-                    <label for="Show">Show Graph</label>
+                    <label htmlFor="Show">Show Graph</label>
                 </div>             
             </div>
         </div>
