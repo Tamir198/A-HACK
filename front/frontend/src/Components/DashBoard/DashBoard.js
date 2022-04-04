@@ -79,7 +79,7 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
 
       </div>
       {ShowGraph && <TableCard listsGraph={listsGraph} numberOfGraph={listsGraph.length}
-       currentList={listByRole(localStorage.getItem("Role"))} setAdminLists={setAdminLists}/>}
+       currentList={listByRole(localStorage.getItem("Role"))} setAdminLists={setAdminLists} setShowGraph={setShowGraph}/>}
 
     </div>
   )

@@ -339,3 +339,15 @@ input:focus{
 .centered{
   text-align: center;
 }
+.x-btn{
+  width: 2rem;
+  height:2rem;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
