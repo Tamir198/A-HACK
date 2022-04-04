@@ -268,6 +268,10 @@ input:focus{
     position: absolute;
     right: 10rem;
     width: 10rem;
+    border-radius: 6px;
+    z-index: 6px;
+    box-shadow: 1px 1px 1px 1px;
+    background: aliceblue;
 
   }
 
@@ -330,4 +334,8 @@ input:focus{
   cursor: pointer;
   height: 1rem;
   width: 1rem;
+}
+
+.centered{
+  text-align: center;
 }

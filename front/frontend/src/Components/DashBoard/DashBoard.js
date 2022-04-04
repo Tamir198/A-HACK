@@ -2,19 +2,39 @@ import {React,useState, useEffect} from 'react'
 import NavBar from '../NavBar/NavBar'
 import Card from '../Card/Card' 
 import TableCard from '../TableCard/TableCard'
+
+import test from "../../assets/test.jpeg"
+import test2 from "../../assets/test2.jpeg"
+import test3 from "../../assets/test3.jpeg"
+import test4 from "../../assets/test4.jpeg"
+import test5 from "../../assets/test5.jpeg"
+
+
 const DashBoard = () => {
   const listsGraph = [{
-    title:"Graph1",
-    src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-  },{
-    title:"Graph2",
-    src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-  },{
-  title:"Graph3",
-  src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU"
-  }]
+    title:"Outbound network",
+    src: test
+  },
+  {
+    title:"Inbound network",
+    src: test2
+  },
+  {
+    title:"Cpu consumption",
+    src: test3
+  },
+  {
+    title:"Sales in last month",
+    src: test4
+  },
+  {
+    title:"New users last year",
+    src: test5
+  },
 
-const [AdminLists,setAdminLists] = useState([listsGraph[0],listsGraph[1]]);
+]
+
+const [AdminLists,setAdminLists] = useState(listsGraph);
 const [DevLists,setDevLists] = useState([listsGraph[0],listsGraph[1],listsGraph[2]]);
 const [DevopsLists,setDevopsLists] = useState([listsGraph[0],listsGraph[1]])
 const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
@@ -28,6 +48,7 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
     "AnylastDev":AnylastLists
   }
 
+
   useEffect(() => {
     console.log("Admin list changes")
     console.dir(AdminLists)
@@ -40,6 +61,7 @@ const [AnylastLists,setAnylastLists] = useState([listsGraph[0],listsGraph[1]])
   
   return (
     <div>
+      <h1 className='centered'>Developers Interface</h1>
       {localStorage.getItem("Role") == "Admin" && 
       <>
         <NavBar/>

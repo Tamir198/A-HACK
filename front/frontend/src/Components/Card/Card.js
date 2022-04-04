@@ -5,7 +5,7 @@ const Card = ({title,src}) => {
     <div className='card-item'>
         <div className='app__card-content'>
             <h3>{title}</h3>
-            <iframe className='iframe-card' src={src}></iframe>
+            <img className='iframe-card' src={src}></img>
 
         </div>
     </div>
