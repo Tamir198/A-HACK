@@ -1,0 +1,353 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app_navbar_links {
+  flex: 1;
+}
+@media screen and (min-width: 900px) {
+  .app_navbar_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.app_navbar_links li {
+  font-size: 1.2rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+.app_navbar_links li div {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.app_navbar_links li a {
+  color: #6b7688;
+  text-decoration: none;
+  flex-direction: column;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.app_navbar_links li a:hover {
+  color: #000000;
+}
+.app_navbar_links li:hover div {
+  background: #000000;
+}
+@media screen and (max-width: 900px) {
+  .app_navbar_links {
+    display: none;
+  }
+}
+.dashBoard-h1{
+  text-align: center;
+}
+
+/*Card*/
+.card-item{
+  background-color: white;
+  width: 29rem;
+  height: 18rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 3rem;
+  display:flex;
+  position: relative;
+  left:15rem;
+  overflow: hidden;
+}
+.h4-card, .p-card, .h5-card{
+  margin-left: 3rem;
+}
+
+.app__testmonials{
+  padding-top: 2rem;
+  flex-direction: column;
+}
+
+.app__card-content{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100rem;
+  position: relative;
+}
+
+.app__card-content .h1{
+  text-align: center;
+}
+
+.card-section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.iframe-card{
+  position: absolute;
+  bottom: 0rem;
+  width:100%;
+  height:80%;
+}
+
+.login-section{
+  background-color: white;
+  box-shadow: #00000059 0px 5px 15px;
+  border-radius: 10px;
+  width:35rem;
+  height:40rem;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+    margin: auto;
+  display: flex;
+}
+
+.form-login{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section__Login{
+  height:100%;
+  flex:1;
+  background: #f8f8ff;
+  border-radius: 15px;
+}
+.section__info{
+  border-radius: 30px 0px 0px 30px;
+  height:100%;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.login__background{
+  width:50%;
+  height:80%;
+  position: absolute;
+  top:0vh;
+  left:0vw;
+  border-radius: 8px;
+}
+
+.line{
+  width:4rem;
+  height:0.01rem;
+  
+  border-top: 0.1rem solid white;
+}
+
+.icon{
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.login-title{
+  padding: 1rem 2rem;
+}
+
+.h5-info-form{
+  color:red;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.Form__section__login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.errorSection{
+  height:4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 5rem;
+}
+
+.errorMsg{
+  margin-right: 1rem;
+  color: red;
+  font-weight: 500;
+  margin:0;
+}
+
+.section-name, .section-password,.section-message ,.section-phone{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+  position: relative;
+  }
+  
+.btnSubmit{
+  padding: 1rem 2rem;
+  background-color: purple;
+  color:white;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  border:none;
+  transition: all 0.3s ease-in-out;
+  position:relative;
+  top:10vh;
+  width:11rem;
+  margin: auto;
+  text-align: center;
+}
+
+.btnSubmit:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+  color:black;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.LabelDiv{
+  font-size: 1rem;
+  width: 5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width:20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border:none;
+  padding-right: 0.5rem;
+  outline: none;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+input:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    outline:1px solid gray;
+}
+.editBtn{
+    margin: auto;
+    position: absolute;
+    right: 10rem;
+    width: 10rem;
+    border-radius: 6px;
+    z-index: 6px;
+    box-shadow: 1px 1px 1px 1px;
+    background: aliceblue;
+
+  }
+
+  .items-Graph{
+    position: relative;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-graph{
+    width:15rem;
+    height:10rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+  }
+
+  .app__card-graph > img{
+    max-height: 6rem;
+  }
+.items-Graph{
+  background-color: white;
+  width: 60rem;
+  height: 40rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+}
+
+
+.items-Graph > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Check box*/
+.checkbox-Container{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-Container .label{
+  width:30rem;
+}
+
+.showInput{
+  width:5rem;
+  background-color: transparent;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+.centered{
+  text-align: center;
+}
+.x-btn{
+  width: 2rem;
+  height:2rem;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
